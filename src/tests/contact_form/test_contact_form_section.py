@@ -10,7 +10,6 @@ URL = 'http://automationpractice.com/'
 # This decorator parametrize the test, so we can indicate which browsers we want to use for the test case.
 # In this case I'm only using chrome as the browser where the test will be execute,
 # but in case I want to execute it on more than one I just have to a string item to the list, i.e. 'firefox'
-@pytest.mark.skip # TODO: Remove
 @pytest.mark.parametrize('browser', ['chrome'])
 def test_verify_subject_heading(driver):
 
@@ -28,7 +27,6 @@ def test_verify_subject_heading(driver):
     # Verify that the message is not sent
     assert contact_form_section.error_alert_is_displayed() == True
 
-@pytest.mark.skip # TODO: Remove
 @pytest.mark.parametrize('browser', ['chrome'])
 def test_verify_email_address(driver):
 
@@ -46,7 +44,6 @@ def test_verify_email_address(driver):
     # Verify that the message is not sent
     assert contact_form_section.error_alert_is_displayed() == True
 
-@pytest.mark.skip # TODO: Remove
 @pytest.mark.parametrize('browser', ['chrome'])
 def test_verify_order_reference(driver):
 
@@ -64,7 +61,6 @@ def test_verify_order_reference(driver):
     # Verify that the message is not sent
     assert contact_form_section.error_alert_is_displayed() == True
 
-# @pytest.mark.skip # TODO: Remove
 @pytest.mark.parametrize('browser', ['chrome'])
 def test_verify_message(driver):
 
