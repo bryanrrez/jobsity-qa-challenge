@@ -27,3 +27,5 @@ While being on the Terminal or Command Prompt, and after executing the command `
 ## How to run the project?
 
 The first thing to note is that the project counts with a config file where you have to specify the operating system where you would want to run it. By default, the config file contains macOS as operating system, but if that's not your OS than replace it with a supported one, in this case we're talking about Windows.
+
+After setting that up, it's turn to execute the command `pytest` on the main directory. It should start to run all the test cases developed.
